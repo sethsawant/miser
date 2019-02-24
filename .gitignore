@@ -1,1 +1,4 @@
 *.env
+backend/python_scripts/__pycache__/database.cpython-36.pyc
+backend/python_scripts/__pycache__/flipp.cpython-36.pyc
+backend/python_scripts/__pycache__/location_services.cpython-36.pyc
