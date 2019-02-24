@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "miser",
+  "alias": "miser",
+  "builds": [
+    {
+      "src": "*.py",
+      "use": "@liudonghua123/now-flask",
+      "config": { "maxLambdaSize": "1000mb" }
+    }
+  ],
+  "routes": [{ "src": "/.*", "dest": "/" }]
+}
