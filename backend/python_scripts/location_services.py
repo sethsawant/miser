@@ -2,7 +2,7 @@
 import requests
 import json
 place = 'ChIJ7_NwAjXPw4kRnSsd-af8Qpo'
-API_key = '&key=AIzaSyAYt13KNaGXHpQGaXoKEQURCx5fEaZ3Xlo' # Google Maps API Key
+API_key = 'meme' # Google Maps API Key
 
 """ takes in a google maps place_id and returns the name, state and 
 zip code of the store in a dictionary """
@@ -81,7 +81,6 @@ def find_nearby(lat, lng, radius):
     url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + str(lat) + ',' + str(lng) + '&radius=' + str(radius) + '&type=shopping&keyword=groceries' + API_key
     r = requests.get(url = url)
     json_string = r.text
-    print(json_string)
     parsed_json = json.loads(json_string)
     result = parsed_json['results']
     
