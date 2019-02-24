@@ -1,0 +1,3 @@
+pylint>=2.1.1
+mypy
+pytest>=3.7.1
