@@ -13,7 +13,7 @@ def place_id(place_id):
     parsed_json = json.loads(json_string)
 
     result = parsed_json['result']
-    json_body = result['adr_address'];
+    json_body = result['adr_address']
     name = result['name']
 
     
@@ -26,13 +26,7 @@ def place_id(place_id):
     a = json_zip + 13
     b = a + 5
     zipcode = json_body[a:b]
-
     
-
-    
-    print('Zipcode is: ' + zipcode)
-    print('State is: ' + state)
-    print('Name is: ' + name)
-    
+    return {'name' : name, 'state' : state, 'zip' : zipcode}
 
 place_id(place)
