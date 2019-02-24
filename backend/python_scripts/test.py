@@ -9,7 +9,7 @@ import database
 # connect to remote db
 client = database.authenticate('miser','miaomiaomiser69')
 # points to parse_flyer_json collection in database
-db_collection = client.miser.parse_flyer_json
+db_collection = client.miser.price_data
 
 
 # gets current flyer data for urbana walmart
